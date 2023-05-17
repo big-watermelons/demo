@@ -1,0 +1,26 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/companydata?serverTimezone=JST
+    username: root
+    password: root
+
+server:
+  port: 8080
+#  context-path: /api
+logging:
+  level:
+    root: info
+    com.lrm: debug
+  file: logs/debug.log
+
+mybatis:
+  type-aliases-package: com.sutest512.entity
+  mapper-locations: classpath:mappers/*.xml
+
+
+
+
+
